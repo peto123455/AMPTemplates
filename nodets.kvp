@@ -1,6 +1,6 @@
-Meta.DisplayName=Node
+Meta.DisplayName=NodeTS
 Meta.Description=Node Service Instance
-Meta.OS=Windows, Linux
+Meta.OS=Linux
 Meta.AarchSupport=Native
 Meta.Arch=All
 Meta.Author=IceOfWraith

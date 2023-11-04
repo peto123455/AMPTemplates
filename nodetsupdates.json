@@ -142,5 +142,12 @@
         "UpdateSourceArgs":"/C set PATH={{$FullBaseDir}}node;%PATH% && cd \"{{$FullBaseDir}}app\\{{ApplicationLocation}}\\\" && \"{{$FullBaseDir}}node\\node\" \"{{$FullBaseDir}}node\\node_modules\\npm\\bin\\npm-cli.js\" ci >> {{$FullBaseDir}}AMPSetupLog.txt 2>&1",
         "UpdateSourceConditionSetting":"NpmInstallType",
         "UpdateSourceConditionValue":"npmci"
-    }
+    },
+    {
+        "UpdateStageName":"npm Packages",
+        "UpdateSourcePlatform":"Linux",
+        "UpdateSource":"Executable",
+        "UpdateSourceData":"/bin/bash",
+        "UpdateSourceArgs":"-c 'export PATH=$PATH:{{$FullBaseDir}}node/bin && cd \"{{$FullBaseDir}}app/{{ApplicationLocation}}/\" && \"{{$FullBaseDir}}node/bin/node\" \"{{$FullBaseDir}}node/bin/npm\" run compile >> {{$FullBaseDir}}AMPSetupLog.txt 2>&1'",
+    },
 ]
